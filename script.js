@@ -7,16 +7,19 @@ class Rectangle {
     this._width = width;
     this._height = height;
   }
-	get width() {
+
+  get width() {
     return this._width;
   }
 
   get height() {
     return this._height;
   }
-	getArea() {
+
+  getArea() {
     return this._width * this._height;
   }
+}
 }
 
 class Square extends Animal {
@@ -24,7 +27,7 @@ class Square extends Animal {
     if (side <= 0) {
       throw new Error("Side must be a positive integer");
     }
-    super(side, side); // Call Rectangle constructor with width=side, height=side
+    super(side, side);  
   }
 
   getPerimeter() {
